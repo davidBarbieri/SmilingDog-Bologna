@@ -1,10 +1,12 @@
 <div class="header-container">
     <header class="wrapper clearfix">
         <h1 class="isologo">
-            <picture>
-                <img alt="Smiling Dog - Bologna" height="617" width="768" src="/img/smiling-dog_isologo.png">
-            </picture>
-            <span class="iso">Smiling Dog - Bologna</span>
+            <a href="/">
+                <picture>
+                    <img alt="Smiling Dog - Bologna" height="617" width="768" src="/img/smiling-dog_isologo.png">
+                </picture>
+                <span class="iso">Smiling Dog - Bologna</span>
+            </a>
         </h1>
         <nav>
             <ul>

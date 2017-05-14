@@ -15,7 +15,7 @@
             </section>
             <section>
                 <h2>Agility Dog</h2>
-                <p> L’agility dog è uno sport che consiste in un percorso a ostacoli che il cane, condotto dal suo proprietario, deve affrontare nell’ordine previsto, nel minor tempo possibile e senza commettere penalità.</p>p>
+                <p> L’agility dog è uno sport che consiste in un percorso a ostacoli che il cane, condotto dal suo proprietario, deve affrontare nell’ordine previsto, nel minor tempo possibile e senza commettere penalità.</p>
                 <p>Lo scopo di questa disciplina, aperta a tutti i cani, è quello di evidenziare il piacere e l'agilità del cane nel collaborare col conduttore. Questo sport implica una buona armonia tra il cane e il suo conduttore che porta ad una intesa perfetta tra i due: è dunque necessario che i partecipanti posseggano gli elementi base d'educazione ed obbedienza.</p>
             </section>
             <section>

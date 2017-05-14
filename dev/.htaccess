@@ -86,7 +86,6 @@ AddDefaultCharset utf-8
 # ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    Options +FollowSymlinks
     RewriteBase /
 
     RewriteRule ^index.php$                     index.php?page=home [QSA,L]
@@ -98,36 +97,6 @@ AddDefaultCharset utf-8
 # ######################################################################
 # # SECURITY                                                           #
 # ######################################################################
-
-# ----------------------------------------------------------------------
-# | Content Security Policy (CSP)                                      |
-# ----------------------------------------------------------------------
-
-# Mitigate the risk of cross-site scripting and other content-injection
-# attacks.
-#
-# This can be done by setting a `Content Security Policy` which
-# whitelists trusted sources of content for your website.
-#
-# The example header below allows ONLY scripts that are loaded from the
-# current website's origin (no inline scripts, no CDN, etc). That almost
-# certainly won't work as-is for your website!
-#
-# For more details on how to craft a reasonable policy for your website,
-# read: http://www.html5rocks.com/en/tutorials/security/content-security-policy/
-# (or the specification: http://www.w3.org/TR/CSP11/). Also, to make
-# things easier, you can use an online CSP header generator such as:
-# http://cspisawesome.com/.
-
-# <IfModule mod_headers.c>
-#     Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
-#     # `mod_headers` cannot match based on the content-type, however,
-#     # the `Content-Security-Policy` response header should be send
-#     # only for HTML documents and not for the other resources.
-#     <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|woff2?|xloc|xml|xpi)$">
-#         Header unset Content-Security-Policy
-#     </FilesMatch>
-# </IfModule>
 
 # ----------------------------------------------------------------------
 # | File access                                                        |
@@ -300,30 +269,7 @@ AddDefaultCharset utf-8
     <IfModule mod_mime.c>
         AddEncoding gzip              svgz
     </IfModule>
-
 </IfModule>
-
-# ----------------------------------------------------------------------
-# | Content transformation                                             |
-# ----------------------------------------------------------------------
-
-# Prevent intermediate caches or proxies (e.g.: such as the ones
-# used by mobile network providers) from modifying the website's
-# content.
-#
-# https://tools.ietf.org/html/rfc2616#section-14.9.5
-#
-# (!) If you are using `mod_pagespeed`, please note that setting
-# the `Cache-Control: no-transform` response header will prevent
-# `PageSpeed` from rewriting `HTML` files, and, if the
-# `ModPagespeedDisableRewriteOnNoTransform` directive isn't set
-# to `off`, also from rewriting other resources.
-#
-# https://developers.google.com/speed/pagespeed/module/configuration#notransform
-
-# <IfModule mod_headers.c>
-#     Header merge Cache-Control "no-transform"
-# </IfModule>
 
 # ----------------------------------------------------------------------
 # | ETags                                                              |
@@ -360,17 +306,8 @@ FileETag None
   # CSS
     ExpiresByType text/css                              "access plus 1 year"
 
-  # Data interchange
-    ExpiresByType application/atom+xml                  "access plus 1 hour"
-    ExpiresByType application/rdf+xml                   "access plus 1 hour"
-    ExpiresByType application/rss+xml                   "access plus 1 hour"
-
     ExpiresByType application/json                      "access plus 0 seconds"
-    ExpiresByType application/ld+json                   "access plus 0 seconds"
     ExpiresByType application/schema+json               "access plus 0 seconds"
-    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
-    ExpiresByType application/xml                       "access plus 0 seconds"
-    ExpiresByType text/xml                              "access plus 0 seconds"
 
   # Favicon (cannot be renamed!) and cursor images
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
@@ -423,53 +360,3 @@ FileETag None
   # Other
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 </IfModule>
-
-# ----------------------------------------------------------------------
-# | File concatenation                                                 |
-# ----------------------------------------------------------------------
-
-# Allow concatenation from within specific files.
-#
-# e.g.:
-#
-#   If you have the following lines in a file called, for
-#   example, `main.combined.js`:
-#
-#       <!--#include file="js/jquery.js" -->
-#       <!--#include file="js/jquery.timer.js" -->
-#
-#   Apache will replace those lines with the content of the
-#   specified files.
-
-# <IfModule mod_include.c>
-#     <FilesMatch "\.combined\.js$">
-#         Options +Includes
-#         AddOutputFilterByType INCLUDES application/javascript \
-#                                        application/x-javascript \
-#                                        text/javascript
-#         SetOutputFilter INCLUDES
-#     </FilesMatch>
-#     <FilesMatch "\.combined\.css$">
-#         Options +Includes
-#         AddOutputFilterByType INCLUDES text/css
-#         SetOutputFilter INCLUDES
-#     </FilesMatch>
-# </IfModule>
-
-# ----------------------------------------------------------------------
-# | Filename-based cache busting                                       |
-# ----------------------------------------------------------------------
-
-# If you're not using a build process to manage your filename version
-# revving, you might want to consider enabling the following directives
-# to route all requests such as `/style.12345.css` to `/style.css`.
-#
-# To understand why this is important and even a better solution than
-# using something like `*.css?v231`, please see:
-# http://www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
-
-# <IfModule mod_rewrite.c>
-#     RewriteEngine On
-#     RewriteCond %{REQUEST_FILENAME} !-f
-#     RewriteRule ^(.+)\.(\d+)\.(bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp)$ $1.$3 [L]
-# </IfModule>

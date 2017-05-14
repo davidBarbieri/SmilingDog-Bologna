@@ -1,6 +1,11 @@
 <div class="footer-container">
     <footer class="wrapper">
-        <p>Seguici su: <span class="icon icon-fb"></span></p>
+        <p>
+            Seguici su:
+            <a href="https://facebook.com/" target="_blank">
+                <span class="icon icon-fb">Facebook</span>
+            </a>
+        </p>
 
         <ul>
             <li>
