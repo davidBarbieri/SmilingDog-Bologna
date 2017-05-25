@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../sass/main.scss",
+		"../sass/utils/_variables.scss",
+		"../sass/utils/_effects.scss",
+		"../sass/base/_base.scss",
+		"../sass/layout/_header.scss",
+		"../sass/layout/_footer.scss",
+		"../sass/pages/_home.scss",
+		"../sass/pages/_chi-siamo.scss",
+		"../sass/pages/_dove_siamo-contatti.scss",
+		"../sass/pages/_corsi.scss",
+		"../sass/scenarios/_tablet.scss",
+		"../sass/scenarios/_desktop.scss"
+	],
+	"names": [],
+	"mappings": "AEAA,kBAAkB,CAAlB,QAAkB,CACd,AAAA,IAAI,CAAE,iBAAiB,CAAE,YAAY,CACrC,AAAA,EAAE,CAAE,iBAAiB,CAAE,cAAc,EAGzC,UAAU,CAAV,QAAU,CACN,AAAA,IAAI,CAAE,SAAS,CAAE,YAAY,CAC7B,AAAA,EAAE,CAAE,SAAS,CAAE,cAAc,ECPjC,AAAA,IAAI,AAAC,CACD,UAAU,CFYN,IAAI,CEXX,AAED,AAAA,EAAE,AAAC,CACC,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACb,AAED,AAAA,EAAE,AAAC,CACC,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,IAAI,CACnB,AOVD,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK,EACpC,AAEQ,MAFF,CACF,EAAE,CACE,EAAE,CAFV,AAEY,MAFN,CACF,EAAE,EACM,AAAA,IAAC,CAAD,IAAC,AAAA,CAAW,CACZ,KAAK,CAAE,IAAI,CACd,AAIT,AAAA,gBAAgB,AAAC,CACb,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,GAAG,CACb,CCZL,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM,EACrC,AAEQ,MAFF,CACF,EAAE,CACE,EAAE,CAFV,AAEY,MAFN,CACF,EAAE,EACM,AAAA,IAAC,CAAD,IAAC,AAAA,CAAW,CACZ,KAAK,CAAE,IAAI,CACd,AAIT,AAAA,gBAAgB,AAAC,CACb,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,GAAG,CACb"
+}

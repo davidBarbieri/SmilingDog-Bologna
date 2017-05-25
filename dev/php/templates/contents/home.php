@@ -1,5 +1,20 @@
 <div class="main-container">
-    <div class="main wrapper clearfix">
+    <div class="intro">
+        <ul class="carousel">
+            <li>
+                <img src="/img/home/agility-1.jpg" alt="Agility Bologna, Emilia Romagna" height="683" width="1024">
+            </li>
+            <li>
+                <img src="/img/home/obedience-2.jpg" alt="Obedience Bologna, Emilia Romagna" height="683" width="1024">
+            </li>
+            <li>
+                <img src="/img/home/agility-3.jpg" alt="Agility a Bologna, Emilia Romagna" height="683" width="1024">
+            </li>
+            <li>
+                <img src="/img/home/puppy_class-4.jpg" alt="Educazione di base cani e puppy class a Bologna, Emilia Romagna" height="683" width="1024">
+            </li>
+        </ul>
+
         <article>
             <header>
                 <h1>Smiling Dog - Bologna</h1>
@@ -10,5 +25,31 @@
                 <p>Il centro cinofilo è collocato nei terreni adiacenti alla <a href="http://www.casannicolo.it" target="_blank">Locanda Cà San Nicolò</a> e all’allevamento di AustralianShepard <a href="http://www.moonshinekennel.com" target="_blank">Moon ShineKennel</a>.</p>
             </section>
         </article>
-    </div> <!-- #main -->
-</div> <!-- #main-container -->
+    </div>
+    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    <div class="activities">
+        <ul>
+            <li>
+                <a href="/corsi.php#educazione-base">
+                    <img src="/img/home/corsi/educazione-base.jpg" alt="Educazione di base a Bologna, Emilia Romagna" height="683" width="1024">
+                </a>
+            </li>
+            <li>
+                <a href="/corsi.php#agility">
+                    <img src="/img/home/corsi/agility.jpg" alt="Agility a Bologna, Emilia Romagna" height="683" width="1024">
+                </a>
+            </li>
+            <li>
+                <a href="/corsi.php#obedience">
+                    <img src="/img/home/corsi/obedience.jpg" alt="Obedience a Bologna, Emilia Romagna" height="683" width="1024">
+                </a>
+            </li>
+            <li>
+                <a href="/corsi.php#altri-corsi">
+                    <img src="/img/home/corsi/altri-corsi.jpg" alt="Corsi per cani a Bologna, Emilia Romagna" height="683" width="1024">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

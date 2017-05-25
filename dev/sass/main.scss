@@ -1,0 +1,15 @@
+@import 'utils/variables';
+@import 'utils/effects';
+
+@import 'base/base';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/chi-siamo';
+@import 'pages/dove_siamo-contatti';
+@import 'pages/corsi';
+
+@import 'scenarios/tablet';
+@import 'scenarios/desktop';
