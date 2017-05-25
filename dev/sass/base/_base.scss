@@ -37,6 +37,31 @@ img {
     height: auto;
 }
 
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-bottom: 4px solid $color-green-logo;
+}
+
+h1 {
+    color: $color-titles;
+    font-size: 2.2em;
+}
+
 .wrapper {
     padding: 0 8px;
+}
+
+.title-wrapper {
+    position: absolute;
+    width: 100%;
+    margin-top: -48px;
+    padding: 8px;
+    background: rgba(255,255,255,.65);
+
+    h1, h2 {
+        margin: 0;
+        font-size: 1.5em;
+        color: $color-green-logo-border;
+    }
 }

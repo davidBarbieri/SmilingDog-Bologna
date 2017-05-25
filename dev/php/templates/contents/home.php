@@ -7,7 +7,7 @@
     </div>
 
     <article class="intro-content">
-        <header>
+        <header class="title-wrapper">
             <h1>Smiling Dog - Bologna</h1>
         </header>
         <section class="wrapper">
