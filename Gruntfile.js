@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src: ['dev/js/*.js', 'dev/css/*.css'],
+                    src: ['dev/css/*.css'],
                 },
                 options: {
                     browser: 'google chrome',

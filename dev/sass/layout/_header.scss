@@ -1,0 +1,85 @@
+.main-header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: 68px;
+    width: 100%;
+    padding-top: 6px;
+    background: url('/img/bg-header.png');
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+
+    .menu-trigger {
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        padding: 8px;
+        width: 36px;
+        height: 34px;
+        background: none;
+        border: none;
+        vertical-align: middle;
+        outline: none;
+        cursor: pointer;
+
+        div {
+            height: 2px;
+            width: 20px;
+            margin-bottom: 5px;
+            background: #878787;
+            transition: width .2s;
+
+            &:nth-child(1) {
+                width: 18px;
+            }
+
+            &:nth-child(3) {
+                width: 16px;
+            }
+        }
+
+        &:hover div {
+            &:nth-child(1),
+            &:nth-child(3) {
+                width: 20px;
+            }
+        }
+    }
+
+    .isologo {
+        margin: 0;
+
+        img {
+            height: 58px;
+            width: auto;
+        }
+    }
+}
+
+.menu {
+    position: fixed;
+    width: 92%;
+    height: 100%;
+    top: 68px;
+    left: -100%;
+    background: $color-menu-bg;
+    box-shadow: 6px 0 20px 0px rgba(0,0,0,.75);
+    z-index: 2;
+    transition: left .2s;
+
+    &.open {
+        left: 0;
+    }
+
+    li {
+        padding: 10px;
+        border-bottom: 1px solid $color-menu-border;
+    }
+
+    a {
+        font-family: $font-titles;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #403e3e;
+    }
+}

@@ -1,8 +1,22 @@
-body {
-    background: $white;
+* {
+    box-sizing: border-box;
 }
 
-ol {
+body {
+    background: #fff;
+    font-family: $font-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: $font-titles;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul, ol {
     margin: 0;
     padding: 0;
 }
@@ -11,4 +25,18 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+a {
+    color: $color-green-logo;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    padding: 0 8px;
 }

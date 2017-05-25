@@ -1,9 +1,28 @@
-@-webkit-keyframes rotating {
-    from{ -webkit-transform: rotate(0deg); }
-    to{ -webkit-transform: rotate(360deg); }
+@-webkit-keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
 }
-
-@keyframes rotating {
-    from{ transform: rotate(0deg); }
-    to{ transform: rotate(360deg); }
+@-moz-keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
+}
+@-ms-keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
+}
+@keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
 }

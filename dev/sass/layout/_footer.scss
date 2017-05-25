@@ -1,0 +1,51 @@
+.main-footer {
+    margin: 20px 0 0 0;
+
+    border-top: 6px solid $color-green-logo;
+    background: url('/img/bg-header.png');
+}
+
+.followUs {
+    margin: 0 0 6px;
+    padding: 6px 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #ccc;
+    background: rgba(0,0,0,.2);
+
+    a {
+        display: block;
+        margin: auto;
+        width: 60px;
+    }
+
+    .icon-fb {
+        margin: 10px 0 6px;
+        display: block;
+    }
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 2% 10%;
+
+        &:last-child {
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+        }
+    }
+
+    a {
+        color: #ccc;
+        font-weight: bold;
+    }
+}
