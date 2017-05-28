@@ -19,6 +19,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'dev/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'dev/'
+                }]
+            }
+        },
         browserSync: {
             dev: {
                 bsFiles: {
@@ -70,6 +80,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('release', ['sass', 'clean', 'copy', 'uglify', 'cssmin', 'copy:latest']);
+    grunt.registerTask('release', ['sass', 'clean', 'copy', 'uglify', 'cssmin', 'imagemin', 'copy:latest']);
     grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
 };
