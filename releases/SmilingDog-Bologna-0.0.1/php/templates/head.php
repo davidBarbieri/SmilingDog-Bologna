@@ -6,7 +6,6 @@
     La nostra associazione promuove lo sviluppo di una corretta relazione tra uomo e cane basata sul rispetto e sulla collaborazione.">
 <meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400|Quicksand:400,700">
 
