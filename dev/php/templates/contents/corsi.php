@@ -3,7 +3,7 @@
         <header>
             <h2>Corsi</h2>
         </header>
-        <section>
+        <section id="educazione-base">
             <picture>
                 <img alt="Corsi di educazione di base a bologna, emilia romagna" height="600" width="1024" src="/img/corsi/educazione-base.jpg">
             </picture>
@@ -14,7 +14,7 @@
             <p> Il corso di educazione di base ha come obbiettivo quello di impostare una corretta relazione tra cane e proprietario. Gli esercizi praticati durante il corso sono volti ad ottenere un buon controllo sul proprio amico a quattro zampe nelle più svariate situazioni e mirano a sviluppare le sue doti collaborative permettendo così al binomio di trovare un’ottima intesa.  Un cane gestito correttamente infatti si rivelerà un ottimo compagno in tutti i contesti della vita quotidiana.</p>
         </section>
 
-        <section>
+        <section id="obedience">
             <picture>
                 <img alt="Corsi di obedience a bologna, emilia romagna" height="600" width="1024" src="/img/corsi/obedience.jpg">
             </picture>
@@ -26,7 +26,7 @@
             <p>Nelle Prove di Obedience sono previste cinque classi (Predebuttanti, Debuttanti, Classe1 , Classe 2 e Classe 3) dove la difficoltà degli esercizi aumenta man mano che si avanza di grado.</p>
         </section>
 
-        <section>
+        <section id="agility">
             <picture>
                 <img alt="Corsi di agility dog a bologna, emilia romagna" height="600" width="1024" src="/img/corsi/agility.jpg">
             </picture>
@@ -38,7 +38,7 @@
             <p>Lo scopo di questa disciplina, aperta a tutti i cani, è quello di evidenziare il piacere e l'agilità del cane nel collaborare col conduttore. Questo sport implica una buona armonia tra il cane e il suo conduttore che porta ad una intesa perfetta tra i due: è dunque necessario che i partecipanti posseggano gli elementi base d'educazione ed obbedienza.</p>
         </section>
 
-        <section>
+        <section id="altri-corsi">
             <picture>
                 <img alt="Corsi di puppy class a bologna, emilia romagna" height="600" width="1024" src="/img/corsi/puppy-class.jpg">
             </picture>

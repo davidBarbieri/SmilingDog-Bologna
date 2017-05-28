@@ -17,26 +17,3 @@
         </section>
     </article>
 </div>
-
-<ul class="activities flatten">
-    <li>
-        <a href="/corsi.php#educazione-base">
-            <img src="/img/home/corsi/educazione-base.jpg" alt="Educazione di base a Bologna, Emilia Romagna" height="200" width="640">
-        </a>
-    </li>
-    <li>
-        <a href="/corsi.php#agility">
-            <img src="/img/home/corsi/agility.jpg" alt="Agility a Bologna, Emilia Romagna" height="200" width="640">
-        </a>
-    </li>
-    <li>
-        <a href="/corsi.php#obedience">
-            <img src="/img/home/corsi/obedience.jpg" alt="Obedience a Bologna, Emilia Romagna" height="200" width="640">
-        </a>
-    </li>
-    <li>
-        <a href="/corsi.php#altri-corsi">
-            <img src="/img/home/corsi/altri-corsi.jpg" alt="Corsi per cani a Bologna, Emilia Romagna" height="200" width="640">
-        </a>
-    </li>
-</ul>
