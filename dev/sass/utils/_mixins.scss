@@ -1,0 +1,18 @@
+@mixin carousel($quantity: 4) {
+    position: relative;
+    overflow: hidden;
+
+    .slider {
+        width: (100% * $quantity);
+        animation: css-carousel 20s linear infinite;
+
+        img {
+            width: (100% / $quantity);
+            height: auto;
+
+            &:not(:first-child) {
+                float:left;
+            }
+        }
+    }
+}

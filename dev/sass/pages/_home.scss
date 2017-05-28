@@ -1,20 +1,5 @@
-.intro {
-    position: relative;
-    overflow: hidden;
-}
-
-.intro-carousel {
-    width: 400%;
-    animation: css-carousel 20s linear infinite;
-
-    img {
-        width: 25%;
-        height: auto;
-
-        &:not(:first-child) {
-            float:left;
-        }
-    }
+.carousel {
+    @include carousel();
 }
 
 .intro-content {
@@ -25,13 +10,10 @@
 
 .activities {
     display: none;
+
     li {
         position: relative;
         display: block;
         width: 100%;
-
-        img {
-
-        }
     }
 }

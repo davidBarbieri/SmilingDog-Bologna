@@ -42,4 +42,4 @@
             <p>Al centro cinofilo Smiling Dog Bologna mi occupo dei corsi di educazione di base, puppyclass e tricks.</p>
         </section>
     </article>
-</div>x
+</div>
