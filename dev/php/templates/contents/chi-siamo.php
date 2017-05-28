@@ -1,7 +1,7 @@
 <div class="wrapper">
-     <article>
+    <article>
         <header>
-            <h1>Chi siamo</h1>
+            <h2>Chi siamo</h2>
         </header>
         <section>
             <picture>
@@ -9,7 +9,7 @@
             </picture>
 
             <header class="title-wrapper">
-                <h2>Cristina Collina</h2>
+                <h3>Cristina Collina</h3>
             </header>
 
             <p>Da sempre appassionata del mondo canino, mi sono affacciata alla cinofilia nel 2007 quando arrivò a casa Dana, una cucciola di Border Collie dal carattere un po’ difficile. Ho iniziato con lei un percorso di educazione di base e successivamente ho iniziato a praticare l’Agility.</p>
@@ -28,11 +28,11 @@
 
         <section>
             <picture>
-                <img alt="educatrice cinofila e istruttora obedience e agility bologna, emilia romagna Cristina Collina" height="600" width="1024" src="/img/chi-siamo/cristina-collina.jpg">
+                <img alt="educatrice cinofila e istruttora obedience e agility bologna, emilia romagna Cristina Collina" height="600" width="1024" src="/img/chi-siamo/marina-flammini.jpg">
             </picture>
 
             <header class="title-wrapper">
-                <h2>Marina Flammini</h2>
+                <h3>Marina Flammini</h3>
             </header>
 
             <p>Cresciuta a contatto con i cani ma senza aver mai avuto la possibilità di averne uno mio, nel 2011 finalmente ho adottato dal canile Orazio, un meticcio adolescente dal carattere forte. Con lo sviluppo da parte sua di alcuni disturbi di comportamentosono stata obbligata a rivolgermi prima ad un veterinario comportamentalista e successivamente ad intraprendere un percorso rieducativo con Daniela Scanelli. Appassionandomi sempre di più al lavoro con il mio cane e grazie ai numerosi miglioramenti che ottenevamo come binomio ho deciso di seguire un corso per diventare educatore cinofilo, nel 2015 ho conseguito l’attestato come istruttore APICC.</p>

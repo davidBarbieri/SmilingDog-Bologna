@@ -1,0 +1,40 @@
+.googleMaps-link {
+    margin: 20px 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contatti-data {
+    h3 {
+        font-size: 1.5em;
+        color: #3b5e26;
+    }
+
+    h4 {
+        color: $color-green-logo;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    h5 {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+}
+
+.withIcon {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+
+    .icon {
+        margin-right: 8px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

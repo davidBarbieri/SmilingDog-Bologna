@@ -354,8 +354,8 @@ FileETag None
     RewriteEngine On
     RewriteBase /
 
-    RewriteRule ^index.php$                     index.php?page=home [QSA,L]
-    RewriteRule ^chi-siamo.php$                 index.php?page=chi-siamo [QSA,L]
-    RewriteRule ^corsi.php$                     index.php?page=corsi [QSA,L]
-    RewriteRule ^dove_siamo-contatti.php$       index.php?page=dove_siamo-contatti [QSA,L]
+    RewriteRule ^index.php$             index.php?page=home [QSA,L]
+    RewriteRule ^chi-siamo.php$         index.php?page=chi-siamo [QSA,L]
+    RewriteRule ^corsi.php$             index.php?page=corsi [QSA,L]
+    RewriteRule ^contatti.php$          index.php?page=contatti [QSA,L]
 </IfModule>

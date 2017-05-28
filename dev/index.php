@@ -3,7 +3,7 @@
     <head>
         <?php include_once('php/templates/head.php'); ?>
     </head>
-    <body>
+    <body <?php echo 'class="'.$_GET['page'].'"'; ?>>
         <?php
             include_once('php/templates/header.php');
             include_once('php/templates/contents/'.$_GET['page'].'.php');

@@ -8,7 +8,7 @@
 
     <article class="intro-content">
         <header class="title-wrapper">
-            <h1>Smiling Dog - Bologna</h1>
+            <h2>Smiling Dog - Bologna</h2>
         </header>
         <section class="wrapper">
             <p>Il Centro Cinofilo Smiling Dog Bologna nasce dalla passione per la cinofilia sviluppata in anni di lavoro con i nostri cani sotto la guida di Daniela Scanelli, responsabile del <a href="http://centrocinofilo.com" target="_blank">Centro Cinofilo Smiling Dog</a>.</p>
@@ -18,7 +18,7 @@
     </article>
 </div>
 
-<ul class="activities">
+<ul class="activities flatten">
     <li>
         <a href="/corsi.php#educazione-base">
             <img src="/img/home/corsi/educazione-base.jpg" alt="Educazione di base a Bologna, Emilia Romagna" height="200" width="640">

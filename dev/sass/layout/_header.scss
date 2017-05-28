@@ -1,5 +1,6 @@
 .main-header {
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -22,7 +23,8 @@
         outline: none;
         cursor: pointer;
 
-        div {
+        span {
+            display: block;
             height: 2px;
             width: 20px;
             margin-bottom: 5px;
@@ -74,6 +76,14 @@
     li {
         padding: 10px;
         border-bottom: 1px solid $color-menu-border;
+
+        &.selected {
+            background: #8cc31f;
+
+            a {
+                color: #000;
+            }
+        }
     }
 
     a {

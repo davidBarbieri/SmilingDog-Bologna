@@ -11,7 +11,7 @@
         </a>
     </p>
 
-    <ul class="partners">
+    <ul class="partners flatten">
         <li>
             <a href="http://centrocinofilo.com/" target="_blank">
                 <img alt="logo Smiling Dog" height="210" width="300" src="/img/loghi/smiling-dog.png">
