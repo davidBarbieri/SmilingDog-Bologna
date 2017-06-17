@@ -38,3 +38,36 @@
         text-decoration: underline;
     }
 }
+
+@media only screen and (min-width : 768px) {
+    body.contatti article picture {
+        max-height: 300px;
+        overflow: hidden;
+        display: block;
+    }
+
+    .contact-wrapper {
+        display: flex;
+    }
+
+    .dove-siamo {
+        width: 60%;
+        padding-right: 5%;
+    }
+
+    .contatti-data {
+        width: 40%;
+        background: #f5f5f5;
+        border-radius: 8px;
+        margin-top: 26px;
+        padding: 20px;
+
+        h3 {
+            display: none;
+        }
+    }
+
+    .withIcon {
+        margin-top: 0;
+    }
+}

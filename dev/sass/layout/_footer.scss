@@ -49,3 +49,18 @@
         font-weight: bold;
     }
 }
+
+/*--------------------------------------------------
+/* Tablet
+-------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    .partners li {
+        width: 25%;
+        padding: 1em 0;
+
+        img {
+            max-height: 82px;
+            width: auto;
+        }
+    }
+}

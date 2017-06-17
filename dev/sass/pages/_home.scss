@@ -7,3 +7,22 @@
         padding-top: 6px;
     }
 }
+
+body.home {
+    .title-wrapper {
+        margin-left: -10px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    body.home {
+        .title-wrapper {
+            position: relative;
+            height: auto;
+            margin: 20px 0;
+            padding: 0;
+            text-align: left;
+            background: none;
+        }
+    }
+}

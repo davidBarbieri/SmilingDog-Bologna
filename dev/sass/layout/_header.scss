@@ -13,7 +13,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,.5);
 
     .menu-trigger {
-        position: absolute;
+        position: fixed;
         left: 12px;
         top: 20px;
         padding: 8px;
@@ -52,9 +52,10 @@
 
     .isologo {
         margin: 0;
+        height: 58px;
 
         img {
-            height: 58px;
+            height: 100%;
             width: auto;
         }
     }
@@ -75,9 +76,13 @@
         left: 0;
     }
 
+    .wrapper {
+        padding: 0;
+    }
+
     li {
-        padding: 10px;
-        border-bottom: 1px solid $color-menu-border;
+        padding: 18px 20px;
+        border-top: 1px solid $color-menu-border;
 
         &.selected {
             background: #8cc31f;
@@ -93,5 +98,89 @@
         text-transform: uppercase;
         font-weight: bold;
         color: #403e3e;
+    }
+}
+
+/*--------------------------------------------------
+/* Tablet
+-------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    .main-header {
+        display: block;
+        height: 58px;
+        padding: 8px 0;
+        transition: all .15s;
+
+        .menu-trigger {
+            display: none;
+        }
+
+        .isologo {
+            height: 202px;
+            transition: all .15s;
+        }
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        left: auto;
+        background: none;
+        box-shadow: none;
+        transition: none;
+
+        ul {
+            display: flex;
+            float: right;
+            margin-top: 15px;
+        }
+
+        li {
+            padding: 0 0 0 40px;
+            border: 0;
+            text-align: center;
+            transition: all .15s;
+
+            &.selected {
+                background: none;
+                font-weight: bold;
+
+                a {
+                    color: #8cc31f;
+                }
+            }
+
+            &:hover a {
+                color: $color-titles;
+            }
+        }
+
+        a {
+            color: #a9a9a9;
+            text-transform: none;
+            font-weight: 400;
+        }
+    }
+
+    .scrolled {
+        .main-header {
+            height: 36px;
+
+            .isologo {
+                height: 120px;
+            }
+        }
+
+        .menu {
+            ul {
+                margin-top: 4px;
+            }
+
+            li {
+                font-size: .75em;
+            }
+        }
     }
 }

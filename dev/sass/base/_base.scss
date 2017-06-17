@@ -4,7 +4,7 @@
 
 body {
     padding-top: 82px;
-    font-family: $font-text;
+    font: 1.2em/1.5em $font-text;
     background: #fff;
 
     &.home {
@@ -54,15 +54,18 @@ hr {
 }
 
 .wrapper {
+    position: relative;
+    margin: auto;
     padding: 0 10px;
+    max-width: 1024px;
 }
 
 .title-wrapper {
     position: absolute;
     height: 44px;
     width: 100%;
-    margin-top: -48px;
-    padding: 8px;
+    margin: -48px 0 0 0;
+    padding: 8px 10px;
     background: rgba(255,255,255,.65);
 
     &.small h3 {
@@ -71,7 +74,59 @@ hr {
 
     h2, h3 {
         margin: 0;
-        font-size: 1.5em;
+        font-size: 1.3em;
+        line-height: 1;
         color: $color-green-logo-border;
+    }
+}
+
+/*--------------------------------------------------
+/* Tablet
+-------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    body {
+        &.home {
+            padding: 0;
+        }
+    }
+
+    section {
+        margin-bottom: 140px;
+
+        img {
+            border-radius: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    hr {
+        display: none;
+    }
+
+    article {
+        margin-bottom: 120px;
+
+        > header {
+            padding: 80px 0 10px;
+            text-align: right;
+        }
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    .title-wrapper {
+        height: auto;
+        margin-top: -90px;
+        background: rgba(255,255,255,0.75);
+
+        h3 {
+            font-size: 2.2em !important;
+            line-height: 1;
+        }
     }
 }

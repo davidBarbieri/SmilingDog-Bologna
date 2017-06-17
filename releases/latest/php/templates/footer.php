@@ -10,32 +10,33 @@
             </span>
         </a>
     </p>
-
-    <ul class="partners flatten">
-        <li>
-            <a href="http://centrocinofilo.com/" target="_blank">
-                <img alt="logo Smiling Dog" height="210" width="300" src="/img/loghi/smiling-dog.png">
-            </a>
-        </li>
-        <li>
-            <a href="http://www.csencinofilia.it/" target="_blank">
-                <img alt="logo CSEN" height="353" width="300" src="/img/loghi/csen.png">
-            </a>
-        </li>
-        <li>
-            <a href="http://www.coni.it/" target="_blank">
-                <img alt="logo CONI" height="141" width="300" src="/img/loghi/coni.png">
-            </a>
-        </li>
-        <li>
-            <a href="http://www.moonshinekennel.com" target="_blank">
-                <img alt="logo Moonshine kennel" height="205" width="300" src="/img/loghi/moonshine.png">
-            </a>
-        </li>
-        <li>
-            <a href="http://www.casannicolo.it" target="_blank">
-                Locanda Cà San Nicolò
-            </a>
-        </li>
-    </ul>
+    <div class="main-wrapper">
+        <ul class="partners flatten">
+            <li>
+                <a href="http://centrocinofilo.com/" target="_blank">
+                    <img alt="logo Smiling Dog" height="210" width="300" src="/img/loghi/smiling-dog.png">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.csencinofilia.it/" target="_blank">
+                    <img alt="logo CSEN" height="353" width="300" src="/img/loghi/csen.png">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.coni.it/" target="_blank">
+                    <img alt="logo CONI" height="141" width="300" src="/img/loghi/coni.png">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.moonshinekennel.com" target="_blank">
+                    <img alt="logo Moonshine kennel" height="205" width="300" src="/img/loghi/moonshine.png">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.casannicolo.it" target="_blank">
+                    Locanda Cà San Nicolò
+                </a>
+            </li>
+        </ul>
+    </div>
 </footer>

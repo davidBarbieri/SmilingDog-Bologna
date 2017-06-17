@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Smiling Dob - Bologna</title>
 <meta name="keyowords" content="educazione cinofila bologna, educatore cinofilo bologna, educazione cani bologna, educatrice cinofila, cristina collina, marina flammini, obedience bologna, agility bologna, rally obedience bologna, puppy class bologna, cae-1 enci bologna, enci bologna, problemi comportamentali bologna, preparazione cani disabili bologna, centro cinofilo bologna, cani bologna, educazione cinofila, educatore cinofilo, educazione cani, educatrice cinofila, obedience, agility, rally obedience, puppy class, cae-1 enci bologna, enci, problemi comportamentali, preparazione cani disabili, centro cinofilo, cane, cani">
 <meta name="description" content="Il Centro Cinofilo Smiling Dog Bologna nasce dalla passione per la cinofilia sviluppata in anni di lavoro con i nostri cani sotto la guida di Daniela Scanelli, responsabile del Centro Cinofilo Smiling Dog.
