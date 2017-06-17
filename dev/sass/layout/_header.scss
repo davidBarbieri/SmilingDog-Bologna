@@ -81,7 +81,6 @@
     }
 
     li {
-        padding: 18px 20px;
         border-top: 1px solid $color-menu-border;
 
         &.selected {
@@ -94,6 +93,8 @@
     }
 
     a {
+        display: block;
+        padding: 18px 20px;
         font-family: $font-titles;
         text-transform: uppercase;
         font-weight: bold;
@@ -134,7 +135,7 @@
         ul {
             display: flex;
             float: right;
-            margin-top: 15px;
+            margin: 15px 10px 0 0;
         }
 
         li {
@@ -158,6 +159,7 @@
         }
 
         a {
+            padding: 0;
             color: #a9a9a9;
             text-transform: none;
             font-weight: 400;
@@ -170,6 +172,10 @@
 
             .isologo {
                 height: 120px;
+
+                img {
+                    width: 149px;
+                }
             }
         }
 
