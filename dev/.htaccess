@@ -357,5 +357,7 @@ FileETag None
     RewriteRule ^index.php$             index.php?page=home [QSA,L]
     RewriteRule ^chi-siamo.php$         index.php?page=chi-siamo [QSA,L]
     RewriteRule ^corsi.php$             index.php?page=corsi [QSA,L]
+    RewriteRule ^eventi.php$          index.php?page=eventi&dynamic=true [QSA,L]
+    RewriteRule ^foto.php$          index.php?page=foto&dynamic=true [QSA,L]
     RewriteRule ^contatti.php$          index.php?page=contatti [QSA,L]
 </IfModule>

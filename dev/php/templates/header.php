@@ -30,6 +30,12 @@
             <li <?php if ($_GET['page'] == 'corsi') { echo $selectedClass; }?>>
                 <a href="/corsi.php">Corsi</a>
             </li>
+            <li <?php if ($_GET['page'] == 'eventi') { echo $selectedClass; }?>>
+                <a href="/eventi.php">Eventi</a>
+            </li>
+            <li <?php if ($_GET['page'] == 'foto') { echo $selectedClass; }?>>
+                <a href="/foto.php">Foto</a>
+            </li>
             <li<?php if ($_GET['page'] == 'contatti') { echo $selectedClass; }?>>
                 <a href="/contatti.php">Dove Siamo / Contatti</a>
             </li>

@@ -1,0 +1,271 @@
+/*************************************************
+ GENERAL
+**************************************************/
+body {
+    padding-top: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*************************************************
+ HEADER
+**************************************************/
+.main-header {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px 0;
+    
+    .isologo {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        pointer-events: none;
+
+        img {
+            height: auto;
+            width: 149px;
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 6px 10px;
+    background-image: url('/img/bg-header.png');
+    background-color: #242424;
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+
+    .wrapper {
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        float: right;
+        margin: 4px 10px 0 0;
+    }
+
+    li {
+        padding: 0 0 0 26px;
+        border: 0;
+        text-align: center;
+        font-size: .75em;
+        
+        &.selected {
+            font-weight: bold;
+
+            a {
+                color: #8cc31f;
+            }
+        }
+
+        &:hover a {
+            color: $color-titles;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 0;
+        font-family: $font-titles;
+        color: #a9a9a9;
+        text-transform: none;
+        font-weight: bold;
+    }
+}
+
+/*************************************************
+ MENU
+**************************************************/
+menu {
+    position: relative;
+    margin: 0 0 20px;
+    text-align: right;
+}
+
+.createArticle,
+input[type=submit] {
+    padding: 6px 12px;
+    background: #8ac500;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 0;
+
+    &:hover {
+        text-shadow: 1px 1px 3px #333;
+    }
+}
+
+/*************************************************
+ TABLE
+**************************************************/
+.fakeTable {
+    display: flex;
+    padding: 0;
+
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 1.2;
+
+        &.title {
+            width: 50%;
+            justify-content: left;
+        }
+
+        &.date {
+            width: 30%;
+        }
+
+        &.location {
+            display: none;
+            width: 25%;
+        }
+
+        &.options {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 20%;
+
+            a {
+                display: block;
+                width: 26px;
+                height: 26px;
+            }
+
+            .edit-btn {
+                color: #000;
+            }
+
+            .delete-btn {
+                color: #ff8100;
+            }
+        }
+    }
+
+    &.articles-header {
+        font-weight: bold;
+        color: #87c700;
+        background: #333;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+}
+
+.articles-body {
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+    .row:nth-child(2n+2) {
+        background: #dedede;
+    }
+}
+
+/*************************************************
+ FORM
+**************************************************/
+.fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 20px;
+
+    &.wide {
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        font-weight: bold;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    input,
+    select,
+    textarea {
+        height: 32px;
+        width: 100%;
+        padding: 2px 6px;
+        font-size: 16px;
+        border: 1px solid #87c700;
+        border-radius: 6px;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
+    input[type=file] {
+        padding: 0;
+        border: 0;
+    }
+
+    input[type=submit] {
+        position: relative;
+        left: 50%;
+        margin: 0 auto;
+        margin-left: -160px;
+        width: 100%;
+        height: 40px;
+        max-width: 320px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .field {
+        width: 48%;
+    }
+
+    .fakeTable {
+        .col {
+            font-size: 16px;
+
+            &.title {
+                width: 50%;
+            }
+    
+            &.date {
+                width: 13%;
+            }
+    
+            &.location {
+                display: flex;
+                width: 25%;
+            }
+    
+            &.options {
+                width: 12%;
+            }
+        }
+    }
+}

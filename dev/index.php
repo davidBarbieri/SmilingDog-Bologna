@@ -9,7 +9,16 @@
             include_once('php/templates/intros/'.$_GET['page'].'.php');
         ?>
         <div class="wrapper">
-            <?php include_once('php/templates/contents/'.$_GET['page'].'.php'); ?>
+            <?php 
+                if ($_GET['dynamic'] == true) {
+                    define(CATEGORY, $_GET['page']);
+                    include_once('php/dal/getArticles.php');
+                    include_once('php/templates/contents/dynamic.php');
+                    $articles->free();
+                } else {
+                    include_once('php/templates/contents/'.$_GET['page'].'.php');
+                }
+            ?>
         </div>
         <?php
             include_once('php/templates/footer.php');

@@ -15,7 +15,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dev/css/main.css': 'dev/sass/main.scss'
+                    'dev/css/main.css': 'dev/sass/main.scss',
+                    'dev/css/editor.css': 'dev/sass/editor.scss'
                 }
             }
         },
@@ -39,7 +40,7 @@ module.exports = function(grunt) {
                 },
                 options: {
                     browser: 'google chrome',
-                    proxy: 'sdb.dev',
+                    proxy: 'dog.test',
                     watchTask: true,
                     ghostMode: true,
                     notify: false
