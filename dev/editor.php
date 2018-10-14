@@ -60,7 +60,7 @@
                     <li class="col date">{{DATE}}</li>
                     <li class="col location">{{LOCATION}}</li>
                     <li class="col options">
-                        <a href="editor-articles.php?action=edit&id={{ID}}" class="edit-btn">
+                        <a href="editor-articles.php?action=edit&id={{ID}}&category='.$category.'" class="edit-btn">
                             <i class="material-icons">edit</i>
                         </a>
                         <a href="editor-articles.php?category='.$category.'&action=delete&id={{ID}}" class="delete-btn">

@@ -6,6 +6,36 @@
         $('[data-menu-wrapper]').toggleClass('open');
     });
 
+    //CAROUSEL (eventi & foto)
+    $('[data-carousel-trigger]').on('click', createCarousel);
+
+    function createCarousel (ev) {
+        $('body').addClass('showCarousel');
+
+        var imagesList = $(ev.currentTarget).data('images-list');
+        var carouselHtml = '<div id="slick">';
+
+        $.each(imagesList, function (i, imageSource) {
+            carouselHtml += '<img src="' + imageSource + '">';
+        });
+        carouselHtml +=  '</div>';
+
+        $('[data-carousel]').append(carouselHtml);
+        $('[data-close-carousel]').one('click', function () {
+            $('body').removeClass('showCarousel');
+            $('[data-carousel] #slick').slick('unslick').remove();
+        });
+
+        var slickOptions = {
+            infinite: true,
+            dots: false,
+            arrows: true,
+            adaptiveHeight: true
+        };
+
+        $('[data-carousel] #slick').slick(slickOptions);
+    }
+
     var setScrollClass = debounce(function() {
         var mustScroll = $(window).scrollTop() > 300;
         $('body').toggleClass('scrolled', mustScroll);

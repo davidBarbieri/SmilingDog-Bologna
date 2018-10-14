@@ -16,14 +16,16 @@
                     }
                 }
 
-                $imagesListDataAttribute = 'data-images-list="[\''.implode("','", $imagesArray).'\']"';
+                $imagesListDataAttribute = 'data-images-list=\'["'.implode('","', $imagesArray).'"]\'';
 
                 echo '
                 <li>
-                    <article class="article" '.$imagesListDataAttribute.'>
+                    <article class="article">
                         <picture>
-                            <img alt="'.$article['title'].'" 
+                            <img class="carouselTrigger-img" alt="'.$article['title'].'" 
                                 width="100%" height="auto"
+                                data-carousel-trigger
+                                '.$imagesListDataAttribute.'
                                 src="./img/articles/article-'.$article['id'].'_1.jpg">
                         </picture>
 
@@ -31,6 +33,10 @@
                             <h3 class="title">'.$article['title'].'</h3>
                             <h5 class="location">'.$article['location'].'</h5>
                             <h6 class="date">'.$article['date'].'</h6>
+
+                            <button type="button" class="carouselTrigger-btn" data-carousel-trigger '.$imagesListDataAttribute.'>
+                                Guarda tutte le foto
+                            </button>
                         </header>
 
                         <div class="body">'.$article['body'].'</div>
@@ -40,3 +46,9 @@
         ?>
     </ul>
 </section>
+
+<div id="carouselBg"></div>
+<div id="carouselContainer">
+    <button data-close-carousel type="button">chiudi [x]</button>
+    <div data-carousel></div>
+</div>

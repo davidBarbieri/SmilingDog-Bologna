@@ -32,6 +32,7 @@
 <?php
     if ($_GET['dynamic'] == true) {
         echo '<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>';
+        echo '<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>';
     }
 ?>
 

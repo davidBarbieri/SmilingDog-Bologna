@@ -106,18 +106,19 @@
 
                         if ($_GET['action'] == 'edit') {
                             $imgPath = './img/articles/article-'.$_GET['id'].'_'.$i.'.jpg';
-                            
+                            $requiredAttr = '';
+
                             if (file_exists($imgPath)) {
                                 echo '
                                 <label for="foto-'.$i.'">
                                     <img src="'.$imgPath.'">
                                 </label>
                                 <a class="deleteImage-btn" href="/editor-articles.php?action=edit&id='.$_GET['id'].'&deleteImage='.$i.'" onclick="return confirm(\'Sei sicuro di voler cancellare la foto #'.$i.'?\');">Elimina foto [x]</a>';
+                            } else {
+                                $requiredAttr = $i == 1 ? 'required' : '';
                             }
-
                         }
 
-                        $requiredAttr = $i == 1 ? 'required' : '';
                         echo '<input type="file" id="foto-'.$i.'" name="foto[]" accept="image/*" '.$requiredAttr.'>
                         </li>';
                     }

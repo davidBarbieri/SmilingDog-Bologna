@@ -34,4 +34,92 @@
             white-space: pre-wrap;
         }
     }
+
+    .carouselTrigger-img,
+    .carouselTrigger-btn {
+        cursor: pointer;
+    }
+
+    .carouselTrigger-btn {
+        margin-bottom: 16px;
+        padding: 6px 12px;
+        background: #8ac500;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 6px;
+        border: 0;
+
+        &:hover {
+            text-shadow: 1px 1px 3px #333;
+        }
+    }
+}
+
+#carouselBg {
+    z-index: 9998;
+    background: rgba(0,0,0,.8);
+}
+
+#carouselContainer { 
+    z-index: 9999;
+
+    [data-close-carousel] {
+        position: fixed;
+        right: 4px;
+        top: 4px;
+        z-index: 1;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 1px 1px 3px #000;
+        background: none;
+        border: 0;
+        outline: none;
+    }
+
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+#carouselBg,
+#carouselContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .showCarousel & {
+        display: block;
+    }
+
+    .slick-slider {
+        position: static;
+    }
+
+    .slick-prev { 
+        left: 10px;
+    }
+
+    .slick-next {
+        right: 10px;
+    }
+
+    .slick-prev, 
+    .slick-next {
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+    
+        &:before {
+            font-size: 50px;
+        }
+    }
 }
