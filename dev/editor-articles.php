@@ -1,5 +1,5 @@
 <?php
-    if ($_POST['action'] != '') {
+    if ($_POST['submitone'] != '') {
         include_once('./php/dal/'.$_POST['action'].'Article.php');
         die;
     }
@@ -46,10 +46,10 @@
             <div class="wrapper">
                 <ul class="flatten">
                     <li <?php echo $category == 'eventi' ? $selectedClass : ''; ?>>
-                        <a href="?category=eventi">Eventi</a>
+                        <a href="/editor.php?category=eventi">Eventi</a>
                     </li>
                     <li <?php echo $category == 'foto' ? $selectedClass : ''; ?>>
-                        <a href="?category=foto">Foto</a>
+                        <a href="/editor.php?category=foto">Foto</a>
                     </li>
                 </ul>
             </div>
@@ -69,19 +69,19 @@
 
             <ul class="fields">
                 <li class="field">
-                    <label>Titolo</label>
-                    <input type="text" name="title" value="<?php echo $article['title'];?>">
+                    <label>Titolo*</label>
+                    <input type="text" name="title" value="<?php echo $article['title'];?>" required>
                 </li>
                 <li class="field">
                     <label>Posto</label>
                     <input type="text" name="location" value="<?php echo $article['location'];?>">
                 </li>
                 <li class="field">
-                    <label>Data</label>
-                    <input type="date" name="date" value="<?php echo $article['date'];?>">
+                    <label>Data*</label>
+                    <input type="date" name="date" value="<?php echo $article['date'];?>" required>
                 </li>
                 <li class="field">
-                    <label>Categoria</label>
+                    <label>Categoria*</label>
                     <select name="category">
                         <option <?php echo $catSelected['eventi'];?> value="eventi">Eventi</option>
                         <option <?php echo $catSelected['foto'];?> value="foto">Foto</option>
@@ -104,7 +104,7 @@
                     }
                 ?>
                 <li class="field wide">
-                    <input type="submit" value="Salvare <?php echo $category == 'eventi' ? 'evento' : 'galleria';?>">
+                    <input type="submit" name="submitone" value="Salvare <?php echo $category == 'eventi' ? 'evento' : 'galleria';?>">
                 </li>
             </ul>
         </form>

@@ -28,10 +28,10 @@
             <div class="wrapper">
                 <ul class="flatten">
                     <li <?php echo $category == 'eventi' ? $selectedClass : ''; ?>>
-                        <a href="?category=eventi">Eventi</a>
+                        <a href="/editor.php?category=eventi">Eventi</a>
                     </li>
                     <li <?php echo $category == 'foto' ? $selectedClass : ''; ?>>
-                        <a href="?category=foto">Foto</a>
+                        <a href="/editor.php?category=foto">Foto</a>
                     </li>
                 </ul>
             </div>
