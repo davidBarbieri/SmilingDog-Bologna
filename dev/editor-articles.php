@@ -11,6 +11,14 @@
         die;
     } else if ($_GET['action'] == 'edit') {
         include_once('./php/dal/getArticle.php');
+
+        if (isset($_GET['deleteImage'])) {
+            $imgPath = './img/articles/article-'.$_GET['id'].'_'.$_GET['deleteImage'].'.jpg';
+            
+            if (file_exists($imgPath)) {
+                unlink($imgPath);
+            }
+        }
     }
 
     $catSelected = array();
@@ -91,16 +99,26 @@
                     <label>Testo</label>
                     <textarea name="body"><?php echo $article['body'];?></textarea>
                 </li>
-                <li class="field">
-                    <label>Foto #1 <span>(principale)</span></label>
-                    <input type="file" name="foto[0]" accept="image/*">
-                </li>
                 <?php
-                    for ($i=1; $i<=9; $i++) {
+                    for ($i=1; $i<=10; $i++) {
                         echo '<li class="field">
-                        <label>Foto #'.($i+1).'</label>
-                        <input type="file" name="foto['.$i.']" accept="image/*">
-                    </li>';
+                        <label>Foto #'.$i.'</label>';
+
+                        if ($_GET['action'] == 'edit') {
+                            $imgPath = './img/articles/article-'.$_GET['id'].'_'.$i.'.jpg';
+                            
+                            if (file_exists($imgPath)) {
+                                echo '
+                                <label for="foto-'.$i.'">
+                                    <img src="'.$imgPath.'">
+                                </label>
+                                <a class="deleteImage-btn" href="/editor-articles.php?action=edit&id='.$_GET['id'].'&deleteImage='.$i.'" onclick="return confirm(\'Sei sicuro di voler cancellare la foto #'.$i.'?\');">Elimina foto [x]</a>';
+                            }
+
+                        }
+
+                        echo '<input type="file" id="foto-'.$i.'" name="foto[]" accept="image/*">
+                        </li>';
                     }
                 ?>
                 <li class="field wide">

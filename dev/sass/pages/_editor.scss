@@ -202,11 +202,6 @@ input[type=submit] {
         display: block;
         width: 100%;
         font-weight: bold;
-
-        span {
-            font-weight: 400;
-            font-size: 16px;
-        }
     }
 
     input,
@@ -227,6 +222,20 @@ input[type=submit] {
     input[type=file] {
         padding: 0;
         border: 0;
+        width: 50%;
+    }
+
+    img {
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+
+    .deleteImage-btn {
+        float: right;
+        color: #ff0c00;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: bold;
     }
 
     input[type=submit] {

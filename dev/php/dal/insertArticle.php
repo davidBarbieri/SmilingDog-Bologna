@@ -17,7 +17,19 @@
 
     $db->query($query);
     $db->escape_string($query);
+    $id = $db->insert_id;
     $db->close();
+
+    $i = 1;
+    foreach ($_FILES["foto"]["tmp_name"] as $key=>$tmp_name) {
+        $temp = $_FILES["foto"]["tmp_name"][$key];
+
+        if(!empty($temp)) {
+            move_uploaded_file($temp, './img/articles/article-'.$id.'_'.$i.'.jpg');
+        }
+        
+        $i++;
+    }
 
     header("location: /editor.php?category=".$_GET['category']);
 ?>
