@@ -1,10 +1,8 @@
 .DS_Store
 *.codekit
-dev/img/articles/
-/dev/img/articles/
-dev/css/**/*
-/dev/css/**/*
-/node_modules/
-node_modules/
-/node_modules/**/*
-node_modules/**/*
+
+dev/img/articles
+node_modules
+
+*.css
+*.map
