@@ -102,7 +102,7 @@
                 <?php
                     for ($i=1; $i<=20; $i++) {
                         echo '<li class="field">
-                        <label>Foto #'.$i.'</label>';
+                        <label>Foto #'.$i.' '.($i == 1 ? '*' : '').'</label>';
 
                         if ($_GET['action'] == 'edit') {
                             $imgPath = './img/articles/article-'.$_GET['id'].'_'.$i.'.jpg';
@@ -117,7 +117,8 @@
 
                         }
 
-                        echo '<input type="file" id="foto-'.$i.'" name="foto[]" accept="image/*">
+                        $requiredAttr = $i == 1 ? 'required' : '';
+                        echo '<input type="file" id="foto-'.$i.'" name="foto[]" accept="image/*" '.$requiredAttr.'>
                         </li>';
                     }
                 ?>

@@ -13,7 +13,7 @@
                 if ($_GET['dynamic'] == true) {
                     define(CATEGORY, $_GET['page']);
                     include_once('php/dal/getArticles.php');
-                    include_once('php/templates/contents/dynamic.php');
+                    include_once('php/templates/contents/articles.php');
                     $articles->free();
                 } else {
                     include_once('php/templates/contents/'.$_GET['page'].'.php');
