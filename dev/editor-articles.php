@@ -100,7 +100,7 @@
                     <textarea name="body"><?php echo $article['body'];?></textarea>
                 </li>
                 <?php
-                    for ($i=1; $i<=10; $i++) {
+                    for ($i=1; $i<=20; $i++) {
                         echo '<li class="field">
                         <label>Foto #'.$i.'</label>';
 
