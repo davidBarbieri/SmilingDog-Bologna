@@ -6,3 +6,4 @@ node_modules
 
 *.css
 *.map
+dev/php/dal/db.php
