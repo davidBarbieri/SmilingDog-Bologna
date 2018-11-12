@@ -4,7 +4,15 @@
         <?php include_once('php/templates/head.php'); ?>
     </head>
     <body <?php echo 'class="'.$_GET['page'].'"'; ?>>
+        <?php 
+            if ($_GET['dynamic'] == true) {?>
+                <div id="carouselBg"></div>
+                <div id="carouselContainer">
+                    <button data-close-carousel type="button">chiudi [x]</button>
+                    <div data-carousel></div>
+                </div>
         <?php
+        }
             include_once('php/templates/header.php');
             include_once('php/templates/intros/'.$_GET['page'].'.php');
         ?>

@@ -16,14 +16,14 @@
         var carouselHtml = '<div id="slick">';
 
         $.each(imagesList, function (i, imageSource) {
-            carouselHtml += '<img src="' + imageSource + '">';
+            carouselHtml += '<div><img src="' + imageSource + '"></div>';
         });
         carouselHtml +=  '</div>';
 
         $('[data-carousel]').append(carouselHtml);
         $('[data-close-carousel]').one('click', function () {
             $('body').removeClass('showCarousel');
-            $('[data-carousel] #slick').slick('unslick').remove();
+            $('#slick').slick('unslick').remove();
         });
 
         var slickOptions = {
@@ -33,7 +33,7 @@
             adaptiveHeight: true
         };
 
-        $('[data-carousel] #slick').slick(slickOptions);
+        $('#slick').slick(slickOptions);
     }
 
     var setScrollClass = debounce(function() {

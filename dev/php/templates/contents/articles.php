@@ -46,9 +46,3 @@
         ?>
     </ul>
 </section>
-
-<div id="carouselBg"></div>
-<div id="carouselContainer">
-    <button data-close-carousel type="button">chiudi [x]</button>
-    <div data-carousel></div>
-</div>
