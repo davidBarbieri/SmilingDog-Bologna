@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                     src: ['dev/css/*.css'],
                 },
                 options: {
-                    browser: 'google chrome',
+                    browser: 'firefox',
                     proxy: 'dog.test',
                     watchTask: true,
                     ghostMode: true,

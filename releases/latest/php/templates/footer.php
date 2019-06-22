@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <p class="followUs">
         Seguici su:
-        <a href="https://www.facebook.com/smilingdogbologna" target="_blank">
+        <a title="Smiling Dog Bologna - Facebook" href="https://www.facebook.com/smilingdogbologna" target="_blank">
             <span class="icon-fb">
                 <svg version="1.1" id="fb-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <path style="fill:#4d6fa9;" d="M476.69,512H35.31C15.89,512,0,496.11,0,476.69V35.31C0,15.89,15.89,0,35.31,0H476.69C496.11,0,512,15.89,512,35.31V476.69C512,496.11,496.11,512,476.69,512"/>
@@ -13,27 +13,27 @@
     <div class="main-wrapper">
         <ul class="partners flatten">
             <li>
-                <a href="http://centrocinofilo.com/" target="_blank">
+                <a title="Centro cinofilo Smiling Dog" href="http://centrocinofilo.com/" target="_blank">
                     <img alt="logo Smiling Dog" height="210" width="300" src="/img/loghi/smiling-dog.png">
                 </a>
             </li>
             <li>
-                <a href="http://www.csencinofilia.it/" target="_blank">
+                <a title="Csen Cinofilia" href="http://www.csencinofilia.it/" target="_blank">
                     <img alt="logo CSEN" height="353" width="300" src="/img/loghi/csen.png">
                 </a>
             </li>
             <li>
-                <a href="http://www.coni.it/" target="_blank">
+                <a title="Coni"  href="http://www.coni.it/" target="_blank">
                     <img alt="logo CONI" height="141" width="300" src="/img/loghi/coni.png">
                 </a>
             </li>
             <li>
-                <a href="http://www.moonshinekennel.com" target="_blank">
-                    <img alt="logo Moonshine kennel" height="205" width="300" src="/img/loghi/moonshine.png">
+                <a title="Moonshine Kennel" href="http://www.moonshinekennel.com" target="_blank">
+                    <img alt="logo Moonshine kennel" height="205" width="300" src="/img/loghi/moonshine.jpg">
                 </a>
             </li>
             <li>
-                <a href="http://www.casannicolo.it" target="_blank">
+                <a title="Locanda Cà San Nicolò" href="http://www.casannicolo.it" target="_blank">
                     Locanda Cà San Nicolò
                 </a>
             </li>

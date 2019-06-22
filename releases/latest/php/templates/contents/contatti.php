@@ -15,7 +15,7 @@
         <div class="contact-wrapper">
             <div class="dove-siamo">
                 <p class="googleMaps-link">
-                    <a href="https://goo.gl/maps/CFCoJPNTxMJ2" target="_blank">Guarda le indicazioni su Google Maps</a>
+                    <a title="google maps" href="https://goo.gl/maps/CFCoJPNTxMJ2" target="_blank">Guarda le indicazioni su Google Maps</a>
                 </p>
 
                 <p>Il Centro Cinofilo si trova in Via San Donato 3/2 - 40055 Castenaso (BO) </p>
@@ -42,7 +42,7 @@
                             <path d="M0 0h24v24H0z" fill="none"/>
                         </svg>
                     </span>
-                    <a href="mailto:smilingdogbologna@gmail.com">smilingdogbologna@gmail.com</a>
+                    <a title="email" href="mailto:smilingdogbologna@gmail.com">smilingdogbologna@gmail.com</a>
                 </p>
 
                 <h4>Cristina Collina</h4>
