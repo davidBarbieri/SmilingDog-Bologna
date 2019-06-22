@@ -8,7 +8,7 @@
 
         <h1 class="isologo">
             <a title="home" href="/">
-                <span class="hidden">Centro Cinofilo Smiling Dog - Bologna</span>
+                <span style="display:none">Centro Cinofilo Smiling Dog - Bologna</span>
                 <picture>
                     <img alt="Smiling Dog - Bologna" height="617" width="768" src="/img/smiling-dog_isologo.png">
                 </picture>

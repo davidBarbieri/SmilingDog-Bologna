@@ -92,7 +92,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "url": "http://www.smilingdogbologna.it/",
-      "name": "Smiling Dog - Bologna",
+      "name": "Centro Cinofilo Smiling Dog - Bologna",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+393472108031",
